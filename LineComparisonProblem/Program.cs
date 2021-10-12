@@ -7,11 +7,11 @@ namespace LineComparision
         static void Main(string[] args)
         {
             //varibles
-            double x1, x2, y1, y2;    
+            double x1, x2, y1, y2;
             double len, length;
             double point1, point2;
 
-            double x11, x22, y11, y22;    
+            double x11, x22, y11, y22;
             double len1, length1;
             double point3, point4;
 
@@ -58,15 +58,18 @@ namespace LineComparision
             Console.WriteLine("The length of line 2 : " + length1);
             Console.WriteLine();
 
-            if (length == length1)                    
+            if (length == length1)                    // if statement for comparision of the two lines
             {
                 Console.WriteLine("Both the lines are equal");
             }
+            else if (length > length1)
+            {
+                Console.WriteLine("Line 1 is greater than line 2");
+            }
             else
             {
-                Console.WriteLine("The lines aren't equal");
+                Console.WriteLine("Line 2 is greater than line 1 ");
             }
-
         }
     }
 }
